@@ -505,59 +505,81 @@ Through vast amounts of experience the team has an excellent
 understanding of the needs and requirements of their market:
 students, teachers and researchers in STEM disciplines.
 
-Team Members:
+The contributors to SMC are vertically integrated with an excellent
+balance of contributors from high school, college, graduate
+schoool, teaching, research, and business.
+The team consists of William Stein (Professor at Univ of Washington),
+Harald Schilly (applied mathematics graduate student
+in Vienna, Austria), Rob Beezer (professor at Univ of Puget Sound),
+and Jon Lee (Undergraduate at Univ of Washington).
+The team also  consult about business matters with Dennis Stein (San Diego businessman),
+Tim Abbot (co-founder of two successful tech startups), and Will Hearst
+(experienced venture capitalist, investor and philanthropist),
+and regularly discusses approaches to online homework with high
+school student Sequoia Lefthand.
 
-- William Stein, CEO, Professor of Mathematics, University of Washington
-  - Founder, Project Director, Sage open-source mathematical software (2003)
-    - Managed millions of dollars in funding from NSF and Google
-    - Leads open source community of over five hundred contributors
-    - Recipient of ACM/SIGSAM Richard D. Jenks Memorial Prize for excellence in software engineering applied to computer algebra (2013)
-    - Very significant market penetration in pure mathematics research (e.g. cited in at least 410 articles, theses and books)
-  - Researcher, Computational Number Theory
-    - Author of forty-eight original research articles in mathematics
-    - Author of three books
-  - University Teaching
-    - Twenty years experience teaching undergraduate and graduate courses
-    - Supervised four completed Ph.D. theses and dozens of undergraduate projects
-- Harald Schilly, (Title), Universität Wien, Austria
-  - Sage Development and Support
-    - Numerous contributions to core Sage library in numerical mathematics and optimization (other areas?), since 2007
-    - Maintains numerous critical aspects of Sage infrastructure, such as web sites and mirror sites
-    - Design lead of the SageMath website and brand
-    - Responsible for community management
-    - Active in marketing Sage, such as use of social media
-  - SageMathCloud Development and Support
-    - Assists William Stein with technical design decisions and implementation
-    - Provides online help for both members and free users
-    - Responsible for marketing SageMathCloud
-    - Monitors European operations
-  - Owner, (business name)
-    - (describe business: size, purpose, revenue?)
-    - data analysis, design,  programming, statistics, ...
-  - University Teaching
-    - (years in words) years experience teaching programming and ICT (other types of courses, what is ICT?)
-- Robert Beezer, Professor of Mathematics, University of Puget Sound
-  - Sage Development and Support
-    - Numerous contributions to core Sage library in linear algebra, graph theory and group theory, since 2009
-    - Active member of the user and developer community, such as organizing four Sage Days workshops specializing in educational uses
-  - Researcher, Algebraic Graph Theory
-    - Author of fifteen original research articles
-  - Open Source Textbook Author
-    - Author of three online open textbooks that include extensive discussion of Sage
-    - Project Founder, open source Mathbook XML authoring system for creating online open textbooks
-  - University Teaching
-    - Thirty-eight years experience designing instructional software
-    - Thirty-seven years experience teaching undergraduate courses
-    - Supervised thirty-one undergraduate projects
-- Sage Community
-  - The core Sage library is an open source project with over a decade's history of attracting top-flight researchers in pure mathematics and programmers with excellent technical skills.  The implementation of sophisticated algorithms in a highly reliable and easy-to-use package has attracted a large user community, who in turn provide testing, discussion, advice, and requests for enhancements.  The volunteer contributions of over five hundred mathematician-programmers and thousands of users are a key part of maintaining and improving a critical component of SageMathCloud.
+The PI William Stein is CEO of SageMath Inc, and founded the SageMath open
+source mathematical software project in 2005.  He has managed millions
+of dollars in funding from NSF, Google, Microsoft, and DOD.
+He is the 2013 recipient of the ACM/SIGSAM Richard D. Jenks Memorial Prize
+for excellence in software engineering applied to computer algebra.
+He has significant market penetration in pure mathematics research:
+cited in at least 410 articles, theses and books,
+author of over forty original research articles in mathematics,
+and author of three published books.
+He has twenty years experience teaching undergraduate and graduate courses,
+has supervised four completed Ph.D. theses and dozens of undergraduate
+projects.
 
+Harald Schilly is a Ph.D. student at Universität Wien in Vienna, Austria.
+(Note: Schilly would not be paid by any money coming from this grant.)
+Since 2007, he has made numerous contributions to the core SageMath
+library in numerical mathematics and optimization.
+He maintains numerous critical aspects of Sage infrastructure,
+such as web sites and mirror sites.
+He is the design lead of the SageMath website and brand and is
+Responsible for community management and  marketing Sage (social
+media, designing fliers, etc.)
+He has been heavily involved with SageMathCloud development,
+and assists William Stein with technical design decisions and
+implementation.  He provides online help for  users,
+and is responsible for marketing SageMathCloud.
+He owns a consulting business in Austria that helps manage technical
+aspects of teaching courses at the university, doing
+data analysis, design,  programming, and statistics.
+He has several years experience teaching programming courses.
 
-(Pending XXXXXX)
+Robert Beezer has made numerous contributions to the core Sage
+library in linear algebra, graph theory and group theory, since 2009.
+He is an active member of the user and developer community,
+and has organized four Sage Days workshops specializing in
+educational uses of Sage.  He mathematical research involves
+Algebraic Graph Theory, and he has published
+fifteen original research articles.
+He has also written three online open source textbooks, which
+include extensive discussion of Sage.
+He is the project founder of the
+open source Mathbook XML authoring system
+for creating online open textbooks.
+He has taught courses and designed instructional software
+at University of Puget sound for over 37 years,
+and supervised 31 undergraduate research projects.
 
-- Dennis Stein: owns million-dollar company with 25 employees, etc...
+Jon Lee is a Junior undergraduate computer science major at
+Univeristy of Washington. He got involved with SageMathCloud
+development when SMC was used for a course he took on scientific
+computing.  In 2014 he spent the summer fulltime doing SMC development,
+and is being funded by Google to work fulltime on SMC during Summer 2015.
 
-- Jon Lee CS undergraduate...
+In addition, the SageMath software is an open source project with over a
+decade's history of attracting top-flight researchers in pure mathematics
+and programmers with excellent technical skills.  The implementation of
+sophisticated algorithms in Sage results in a highly reliable and
+easy-to-use package that has attracted a large user community, who
+in turn provide testing, discussion, advice, and requests for
+enhancements.  The volunteer contributions of over five hundred
+mathematician-programmers and thousands of users are a key part
+of maintaining and improving a critical component of SageMathCloud.
 
 
 ## Technical Discussion and R&D Plan
