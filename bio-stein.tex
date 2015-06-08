@@ -1,0 +1,276 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}%
+\usepackage{amsfonts}%
+\usepackage{amssymb}%
+\usepackage{amsthm}%
+\usepackage{url}
+
+\hoffset=-.04\textwidth%
+\textwidth=1.08\textwidth%
+\voffset=-0.03\textheight
+\textheight=1.06\textheight
+%\voffset=0.5cm%
+%\textheight=1.08\textheight%
+
+\newcommand{\C}{\mathbf{C}}%
+\newcommand{\F}{\mathbf{F}}%
+\newcommand{\Q}{\mathbf{Q}}%
+\newcommand{\QQ}{\mathbf{Q}}%
+\newcommand{\Qbar}{\overline{\Q}}%
+\newcommand{\Z}{\mathbf{Z}}%
+\newcommand{\ZZ}{\mathbf{Z}}%
+\newcommand{\R}{\mathbf{R}}%
+\newcommand{\T}{\mathbf{T}}%
+\renewcommand{\H}{\mathrm{H}}%
+
+\newcommand{\eps}{\varepsilon}%
+\newcommand{\con}{\equiv}%
+\newcommand{\isom}{\cong}%
+\newcommand{\rhobar}{\overline{\rho}}
+\newcommand{\tensor}{\otimes}
+
+
+% ---- SHA ----
+\DeclareFontEncoding{OT2}{}{} % to enable usage of cyrillic fonts
+  \newcommand{\textcyr}[1]{%
+    {\fontencoding{OT2}\fontfamily{wncyr}\fontseries{m}\fontshape{n}%
+     \selectfont #1}}%
+\newcommand{\Sha}{{\mbox{\textcyr{Sh}}}}%
+\newcommand{\tor}{\mbox{\scriptsize\rm tor}}
+
+\newcommand{\myname}{William A.\ Stein}
+\newcommand{\phone}{}%{\sf (206) 419-0925}}
+\newcommand{\email}{}%{\sf wstein@uw.edu}}
+\newcommand{\www}{}%\sf \url{http://wstein.org}}}
+\newcommand{\address}{}
+\usepackage{fancyhdr,ifthen}
+\pagestyle{fancy}
+\cfoot{\thepage}  % no footers (in pagestyle fancy)
+% running left heading
+\lhead{\bfseries\LARGE\em \noindent{}\hspace{-.2em}\myname{}
+        \hfill \thisdocument\vspace{-.2ex}\\}
+% running right heading
+%\newcommand{\spc}{1.31em}
+\newcommand{\spc}{1em}
+
+%\rhead{\em {\small{\phone{}}} \hfill $\cdot$\hfill
+% \email{} \hfill $\cdot$\hfill \www{}}
+
+\rhead{\em {\small{\phone{}}} \hfill \email{} \hfill \www{}}
+
+\setlength{\headheight}{7ex}
+\newcommand{\mainhead}[1]{\begin{center}{\Large \bf #1}\end{center}}
+\newcommand{\head}[1]{\vspace{1.5ex}\par\noindent{\large \bf #1}\par\noindent}
+\newcommand{\subhead}[1]{\vspace{2ex}\par\noindent{\sl #1}\vspace{1ex}\par\noindent{}}
+\newcommand{\ptitle}{\sl}
+
+\newcommand{\hra}{\hookrightarrow}
+
+
+%%%% Theoremstyles
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{challenge}[theorem]{Challenge}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{goal}[theorem]{Goal}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{remarks}[theorem]{Remarks}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+
+\DeclareMathOperator{\End}{End}%
+\DeclareMathOperator{\Tr}{Tr}%
+\DeclareMathOperator{\Res}{Res}%
+\DeclareMathOperator{\res}{res}%
+\DeclareMathOperator{\BSD}{BSD}%
+\DeclareMathOperator{\Gal}{Gal}%
+\DeclareMathOperator{\GL}{GL}%
+\DeclareMathOperator{\Aut}{Aut}%
+\DeclareMathOperator{\Reg}{Reg}%
+\DeclareMathOperator{\Vis}{Vis}%
+\DeclareMathOperator{\Ker}{Ker}%
+\DeclareMathOperator{\Coker}{Coker}%
+\DeclareMathOperator{\Sel}{Sel}%
+\DeclareMathOperator{\ord}{ord}%
+\DeclareMathOperator{\new}{new}%
+\DeclareMathOperator{\an}{an}%
+\DeclareMathOperator{\Vol}{Vol}%
+
+\newcommand{\ran}{r_{\an}}
+
+\DeclareMathOperator{\rank}{rank}%
+\DeclareMathOperator{\Div}{Div}
+\DeclareMathOperator{\sss}{ss}
+\renewcommand{\ss}{\sss}
+\renewcommand{\O}{\mathcal{O}}
+
+\DeclareMathOperator{\Frob}{Frob}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\frakp}{\mathfrak{p}}
+
+\DeclareMathOperator{\Disc}{Disc}
+\DeclareMathOperator{\cond}{cond}
+\newcommand{\thisdocument}{Biographical Sketch}
+
+\begin{document}
+%\maketitle
+
+\head{Professional preparation}%
+\begin{center}
+\begin{tabular}{lll}
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+\mbox{}\hspace{3.2ex}
+&  Harvard University & NSF Postdoc, 2000--2004 \\
+&  University of California at Berkeley & Mathematics, Ph.D. 2000 \\
+&   Northern Arizona University\hspace{1.03in}\mbox{}& Mathematics, B.S. 1994 \\
+\end{tabular}
+\end{center}
+
+\head{Appointments}
+\begin{itemize}\setlength{\itemsep}{-0.8ex}
+\item {\em Professor} of Mathematics,
+University of Washington, September 2010--now.
+\item {\em Associate Professor} of Mathematics,
+University of Washington, April 2006--August 2010.
+\item {\em Associate Professor} of Mathematics,
+UC San Diego, July 2005--March 2006.
+\item Benjamin Peirce {\em Assistant  Professor}  of Mathematics,
+Harvard University, July 2001--May 2005.
+\item {\em NSF Postdoctoral} Research Fellowship
+under Barry Mazur at Harvard University, August 2000--May 2004.
+\item Clay Mathematics Institute Liftoff Fellow, Summer 2000.
+\end{itemize}
+
+
+\head{Products related to proposal}%
+\begin{itemize}\setlength{\itemsep}{-0.8ex}
+
+\item Founded SageMathCloud in 2013 (see \url{https://cloud.sagemath.com}).
+
+\item Founded SageMath in 2004
+  (see \url{http://sagemath.org}), which is a large free open source software
+  project that has over 50{,}000 active users.
+\item \emph{Elementary Number Theory: Primes, Congruences, and Secrets} (185 pages), published in the Springer-Verlag UTM series, 2008.
+
+\item \emph{PRIMES} (136 pages), with B. Mazur, a
+book on the Riemann Hypothesis, under contract with Cambridge Univ. Press (see \url{http://wstein.org/rh/}).
+
+\item \emph{The Sage Project: Unifying Free Mathematical Software to Create a Viable Alternative to Magma, Maple, Mathematica and Matlab}
+(2010), with B. Erocal, for plenary talk at the 2010 International Congress of Math. Software.
+
+\end{itemize}
+
+\newpage
+\head{Other significant products}%
+\begin{itemize}\setlength{\itemsep}{-0.8ex}
+
+\item {\ptitle Non-commutative Iwasawa theory for modular forms} (40 pages), with
+J.~Coates, T.~Dokchitser, Z.~Liang, R.~Sujatha, 2013, in Proceedings of the LMS.
+
+\item {\ptitle Computations About Tate-Shafarevich Groups Using
+    Iwasawa Theory} (46 pages), with C.~Wuthrich, 2012, Mathematics of Computation.
+
+\item {\ptitle Heegner Points and the Arithmetic of Elliptic Curves
+    over Ring Class Extensions}, with R. Bradshaw (15 pages), 2012, J. Number Theory.
+
+\item {\ptitle Toward a Generalization of the Gross-Zagier Conjecture}
+  (33 pages), Int Math Res Notices (2011) Vol. 2011 309-341.
+
+\item \emph{Modular forms, a computational approach} (xvi+268 pp.)
+  Graduate Studies in Mathematics (AMS) 79 2007, with an appendix by
+  Paul Gunnells.
+
+%\item {\ptitle Shafarevich-Tate Groups of Nonsquare Order}, Progress
+%  in Math., {\bf 224} (2004), 277--289, Birkhauser.
+
+
+
+\end{itemize}
+
+\head{Synergistic activities}
+\begin{itemize}\setlength{\itemsep}{-0.5ex}
+\item ACM/SIGSAM 2013
+winner of the {\em Richard Dimick Jenks
+Memorial Prize} for Excellence in
+Software Engineering applied to Computer Algebra.
+
+\item SIMUW 2006, 2007, 2008, 2012; Canada/USA MathCamp
+  mentor (2002); Math Circles talks in Boston; 2011 REU on elliptic
+  curves; 2013 REU on Sage; involved dozens of undergraduates in work on the Sage software.
+
+\end{itemize}
+
+\head{Collaborators and other affiliations}
+\newcommand{\hl}[1]{#1}%
+\begin{itemize}\setlength{\itemsep}{-0.5ex}
+\item \textbf{Collaborators during last 48 months (23 total):}  Jennifer S. Balakrishnan, Jonathan Bober, Robert Bradshaw, Mirela Ciperiani, John Coates, Henri Darmon, Michael Daub, Alyson Deines, Tim Dokchitser, Burcin Erocal, Ariah Klages-Mundt, Benjamin LeVeque, Zhibin Liang, Sam Lichtenstein, J. Steffen M\"{u}ller, Barry Mazur, R. Andrew Ohana, Clement Pernet, A. Rabindranath, Victor Rotger, Paul Sharaba, Ramdorai Sujatha, Christian Wuthrich
+
+
+\item \textbf{Graduate Advisors and Postdoctoral Sponsors (2 total):}\vspace{-1ex}
+\begin{itemize}\setlength{\itemsep}{-0.5ex}
+\item {\bf Ph.D. advisor:} Hendrik Lenstra, University of Leiden,
+Netherlands.%
+\item {\bf NSF Postdoctoral advisor:} Barry Mazur, Harvard
+University.
+\end{itemize}
+\item \textbf{Thesis Advisor and Postgraduate-Scholar Sponsor (8 total):}
+\begin{itemize}\setlength{\itemsep}{-0.5ex}
+\item  6 Ph.D. students:
+Robert Bradshaw (Google, 2010 Ph.D.); Robert Miller's(Applauze, 2010 Ph.D.); Alyson Dienes (CCR, 2014 Ph.D.);
+Simon Spicer's (Ph.D., June 2015);
+Hao Chen's (Ph.D. expected June 2016);
+Andrew Ohana (Ph.D. expected June 2016);
+\item 2 Postdocs: Clement Pernet (Grenoble; postdoc 2007--2008), Craig Citro (Google; postdoc 2009).
+\end{itemize}
+\end{itemize}
+
+% \newpage
+
+% \begin{center}
+% \head{Biographical Statement}
+% \end{center}
+
+% \noindent{}William Stein will contribute to this project in both a
+% research and managerial role.  Stein has been a driving force over the
+% last 10 years in applications of computation to research on modular
+% forms, $L$-functions, and associated arithmetic objects.  As director
+% of the Sage project (http://sagemath.org), he has experience managing
+% working groups and working with undergraduates on a wide range of
+% projects.
+
+% \vspace{2ex}
+
+
+% \noindent{}{\bf Support Statement:}
+% The proposed project naturally fits in with my other
+% NSF-funded research on the Birch and Swinnerton-Dyer conjecture, from
+% which I will receive 2 months summer support during the next 2 years
+% and funding for travel and materials (DMS-0653968).  I have also
+% received an NSF grant (DMS-0703583) to support one postdoc for three
+% years, who will work on developing exact linear algebra algorithms and
+% implementations for Sage.  I am a co-PI on the Arizona Winter School
+% grant (DMS-0602287); this is a yearly 1-week 120-person graduate
+% student workshop in arithmetic geometry, whose upcoming topics mesh
+% well with the themes of the current proposal (e.g., the next theme is
+% quadratic forms, and theta series of quadratic forms are modular
+% forms).  I will also be directing graduate and undergraduate research
+% that is related to this project during the academic year, not just
+% during the summer.  Finally, I am also applying to the NSF FRG program
+% for additional money to support a postdoc and workshops.
+
+\end{document}
+
+%sagemathcloud={"zoom_width":130}
