@@ -6,7 +6,6 @@ Ask for \$150K/month over 6 months, which is \$25K/month.  Use to:
 - hire William Stein 51% time to work on this - \$7K/month
 - pay Beezer part time as a consultant - \$3K/month
 - (RAB) Beezer \$3K/mo sounds good.  Have to ask Deans.  I think I need to be consultant, since UPS won't want me to be an employee, SBIR would want me to be half-time?
-- pay Harald as a consultant - \$3K/month
 - hire some local people (might be students, might not) - \$5K/month
 - hire an experienced business person part time to ... - \$3K/month
    - (RAB) Business expertise on the team
