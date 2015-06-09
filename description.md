@@ -1,5 +1,8 @@
 # Project Description -- "SBIR Phase I: Interactive homework problems for advanced computational mathematics"
 
+(NOTE: The project description has a very mandated structure as explained at http://www.nsf.gov/pubs/2015/nsf15546/nsf15546.htm; also the proposal itself must be for an entirely new thing -- if it were just "iterative ways to make SageMathCloud better", it would
+be instantly rejected without review.)
+
 ## Introduction
 We propose to design and implement a new approach to
 interactive online homework problems called
