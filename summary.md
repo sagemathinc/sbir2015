@@ -1,6 +1,6 @@
-
-
 # Project Summary
+
+(NOT STARTED)
 
 > "The Project Summary should be written in the third person, [...]  understandable to a scientifically or technically literate lay reader. It should not be an abstract of the proposal."  4,600 character limit, including spaces.
 
