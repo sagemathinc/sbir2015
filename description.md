@@ -1,13 +1,10 @@
 # Project Description -- "SBIR Phase I: Interactive homework problems for advanced computational mathematics"
 
-(NOTE: The project description has a very mandated structure as explained at http://www.nsf.gov/pubs/2015/nsf15546/nsf15546.htm; also the proposal itself must be for an entirely new thing -- if it were just "iterative ways to make SageMathCloud better", it would
-be instantly rejected without review.)
-
 ## Introduction
 We propose to design and implement a new approach to
 interactive online homework problems called
 ``SageCloud Interactive Problems'' (SCIP) that
-will initially target courses
+will initially target students in courses
 involving advanced computational mathematics.
 Despite enormous computational challenges, we believe that we can make
 the system cost effective by leveraging
@@ -18,23 +15,22 @@ provide realtime feedback, detailed analytics, deeper
 computational problems than existing systems, and
 improved realtime interaction between students and instructors.
 In particular, we would leverage the NSF-funded
-SageMathCloud (SMC)--see https://cloud.sagemath.com
-platform and NSF-funded SageMath software (see http://sagemath.org).
+SageMathCloud (SMC) platform and NSF-funded SageMath software.
 If successful, our project would greatly increase the ability of students
 to use open source tools for doing computational mathematics,
 for writing up and sharing their results, and make
-such courses less work to teach and more effective.
+courses less work to teach and more effective.
 
 ## Elevator Pitch
 
 
-SCIP will be a major new platform for interactive homework problems
+SCIP will be a new platform for interactive homework problems
 built on top of SageMathCloud (SMC).
 
-The main customers for SCIP are students and teachers of
+The  customers for SCIP are students and teachers of
 courses that involve any form of computational mathematics.
 For example, SMC is a 100% web-based system
-that was used during Spring 2015 by over 60 courses
+that was used during Spring 2015 by over 65 courses
 ranging from traditional Calculus courses to course in Global
 Health, Numerical Analysis, Elliptic Curves and Mathematical
 Finance (see https://github.com/sagemathinc/smc/wiki/Teaching).
@@ -64,13 +60,10 @@ course management functionality, but offers nothing for
 managing the daunting complexity involved in curating interactive
 homework problems
 that involve sophisticated computation and mathematics.
-We view each
-such homework problem as being like an app or a small game, and we propose to
-provide a way to manage many aspects of this ecosystem.
 Some of the current state of the art systems feel antiquated,
 mainly addressing freshman and sophomore level material.
 We instead propose to target college
-senior (or higher) level material,
+senior (and even graduate level) level material,
 and support use of sophisticated
 mathematical software that is potentially
 computationally demanding.
@@ -89,7 +82,7 @@ that handles a huge range of mathematical computations, including
 advanced pure mathematics, numerical analysis, and statistics.
 Users can write computer code and edit LaTeX documents,
 and there's extensive support for "interactive computational
-documents", including IPython Notebooks and Sage worksheets.
+documents", including IPython notebooks and Sage worksheets.
 Such rich interactive computational documents are
 appealing
 to novice users.
@@ -130,17 +123,18 @@ The initial market for SCIP will be every student
 who is taking a course that involves advanced computational
 mathematics.
 
-Price matters to our target market.
-These students are extremely
-cost sensitive, budgets are tight, and some teachers care
-about finding solutions for their students that are
-efficient and affordable.
-
 Our target market values the functionality SMC supports.
 Education is increasingly collaborative,  which
 leads to the need for better tools to support this shift.
 Teachers are overworked
 and greatly value convenience for their IT infrastructure.
+
+Price matters to our target market.
+Students are extremely
+cost sensitive, budgets are tight, and some teachers care
+about finding solutions for their students that are
+efficient and affordable.
+
 
 We have validated the demand for sophisticated
 web-based open source mathematical
@@ -150,9 +144,9 @@ We created basic course managment functionality,
 which makes SMC usable for teaching a course.
 SMC was  used by over 65 courses during Spring 2015 and has
 had over 100K users.
-In May 2015, we transitioned SMC to a freemium commercial business
+In May 2015, we transitioned SMC to a ``freemium'' commercial business
 model and have
-had over 30 paying customers (with nearly \$1,500 in revenue so far).
+had 35 paying customers (with nearly \$1,500 in revenue so far).
 Our proposed homework system would dramatically expand
 the potential ways to use the tools we offer with SMC
 in education, so we think customers will have an
@@ -161,29 +155,33 @@ interest.
 The customers we will focus on for this proposal are instructors
 teaching upper division courses (both at universities or online)
 and the students in those courses.
-The business model is freemium. We charge some users
-a monthly fee to run their projects on better and
-much more stable members-only computers.
-We also provide dedicated resources
+The business model is freemium. This means that the majority of
+users consider the service fully usable for **free** and (like Gmail
+or Dropbox) the free version is not just a trial version!
+However,  we also intend to charge many users
+a monthly fee to run their projects on better
+ members-only computers.
+We also sell dedicated resources
 that instructors can use for all students in a course they
 are teaching, or for research computations.  We pay Google for
 cloud compute resources; in
-exchange for managing the resources, backing up disk, and providing
+exchange for managing the resources, backing up disks, and providing
 redundancy, we mark up the cost by a certain percentage.
 We thus make it easy for many unrelated users to
 share resources in the cloud and benefit from our experience
-managing these resources.  We provide a front-end
-for our customers that makes the underlying virtual machines
+managing these resources.  We provide a web-based interface
+that makes the underlying virtual machines
 easy to use for teaching a course, or
 doing a collaborative research project.   Whenever we provide
 dedicated compute resources we make money, since we are simply
 marking up their cost by a fixed amount.  We also keep the cost down
 for the free resources by using Google's cheaper
 ``preemptible instances", which randomly get rebooted,
-and we restrict the CPU and memory use by each user using cgroups.
+and we restrict the memory and speed of each
+user's project.
 
 The interactive homework system we plan to build
-would mainly use the above business model. It would provide
+would use the freemium business model described above. It would provide
 SMC with more functionality, which would make SMC valuable for a wider
 range of courses, hence increase the number of customers.
 Instructors will be encouraged to make problems they develop freely available;
@@ -224,12 +222,12 @@ requirements are so challenging.
 A potential competitor to SCIP
 could be built on Wolfram Research's product *Wolfram Cloud*, which
 provides web-based access to Wolfram Mathematica.  Wolfram Cloud is
-different than SMC since it is focused on  Wolfram Mathematica.
-Also, Wolfram Cloud is nonfree,  is closed source,  and has very limited
+different than SMC since it is nonfree,  is closed source,
+and has very limited
 collaboration and course management functionality.
-Nevertheless, it would be very natural to develop interactive problem functionality
-on top of their platform.
-Wolfram Research's longterm and deep investment in their Demonstrations
+Nevertheless, it would be natural to develop interactive problem functionality
+on top of this platform.
+Wolfram Research's longterm investment in their Demonstrations
 functionality would provide an excellent foundation on which to build
 an online interactive homework problem system.   It's thus quite plausible
 that the Wolfram Cloud could make a major leap in interactive
@@ -241,12 +239,12 @@ and Maplesoft's Maple software.
 There are many automated homework systems that have been on the
 market for years. Most offer comparably limited sophistication
 of interactive homework problems, which seems fine for most introductory courses.
-Our proposed product would be more useful for
+We believe our proposed product would be more useful for
 advanced and computational courses than the these systems.
-It is very likely that some of these competitors will add much improved
+It is likely that some of these competitors will add
 functionality similar to what we propose for SCIP in the next 8 months,
 since more advanced courses are a natural market for any
-competitor to want to expand into.
+competitor to expand into.
 
 Leaving aside interactive homework problems, and instead considering interactive
 document creation, there are many competitors to SMC (not SCIP).  For example,
@@ -286,10 +284,10 @@ mitigate this by making our product add sufficient
 value.
 
 Another risk is that **our software is open source**,
-and *all* users who like SCIP will instead simply take it and
+and most users who like SCIP will instead simply take it and
 run it themselves on the cloud or their own servers, rather
-than pay us.  It's fine if some (even most) users run SCIP themselves, as
-long as a sufficient percentage don't.
+than pay us.  It's fine if some (even most) users run SCIP
+themselves, as long as a sufficient percentage don't.
 The best way to ensure that people use our central service
 is to implement ways to make SCIP benefit from network
 effects, so that our single centralized server
@@ -315,6 +313,10 @@ by a different name (due to the trademark).   Again, maximizing
 the value of network effects, curated content, and the quality of our
 user support, reputation and development pace
 are the best strategy for addressing this risk.
+Also, from the NSF's perspective, if other companies pick up this technology
+and run with it and build great businesses that out compete SMC, then
+NSF's investment will have been a great success, since they will have
+supported a big advance in technology, even if SMC is not the beneficiary.
 
 Another risk is that **interactive homework is very hard** to get right.
 Online games are difficult to implement and platforms for writing
@@ -353,9 +355,9 @@ mathematics, which is a relatively small market.
 
 The resources we need to implement our plan are people to write software,
 people to talk with and support users, and money to rent cloud compute
-time until we are cash flow positive.  This SBIR should provide enough
-financial support to implement a first usable version of the proposed
-interactive problem platform, and get some testing by users.
+time until we are cash flow positive.  This SBIR would provide enough
+financial support to hire people to implement a first usable version of the proposed
+interactive problem platform, get some testing by users, and iterate on this feedback.
 We would use the funding to  hire the PI, who is an experienced teacher, and some
 programmers with classroom experience.  As an academic and founder of the SageMath
 software project, the PI has the necessary connections.
@@ -383,11 +385,11 @@ to know _a priori_ what user needs will be, hence they will often allocate
 resources inefficiently.    Moreover, many students have  slow personal computers
 on which they are afraid to install software.
 
-We have also found that teachers greatly value even the most atrocious
-interactive online homework systems.
-A strong appeal is that grading homework is very time consuming,
+**We have also found that teachers greatly value even the most atrocious
+interactive online homework systems.**
+Grading homework is very time consuming,
 but interactive homework systems are patient
-and available at all hours, and they find that their students are
+and available at all hours, and instructors find that their students are
 often far more engaged in learning mathematics
 when they get immediate feedback.
 
@@ -398,7 +400,7 @@ type while working on their homework
 is recorded in SMC, which makes detection of cheating easier, and also
 provides more detailed feedback on how students are doing in a course.
 (Unfortunately, clear evidence of cheating, exactly when it happened,
-and how and by whom, has been reported to us by instructors
+and how and by whom, has been periodically reported to us by instructors
 using SMC in courses.)
 
 #### Presenting barriers to entry for competition
@@ -436,8 +438,9 @@ of your colleagues already use it.   This community is a base
 of potential users of SCIP.
 
 The pricing model is another barrier to entry.  Offering a service with a
-significant markup to pay for operating the service (and for profit) is a race
-to the bottom.  Instead, SMC shortcuts that race and already starts with a
+significant markup over the cost of hosting
+is a race to the bottom.  Instead, SMC shortcuts
+that race and already starts with a
 low price (a freemium model with \$7/month for some premium features, plus a standard
 percentage markup on whatever Google happens to be charging for cloud computing
 resources).   This doesn't leave much room for competitors  operating on top of
@@ -535,7 +538,6 @@ and has supervised four completed Ph.D. theses and several undergraduate
 projects.
 
 Harald Schilly is a Ph.D. student at Universität Wien in Vienna, Austria.
-(Note: Schilly would not be paid by any money coming from this grant.)
 Since 2007, he has made numerous contributions to the core SageMath
 library in numerical mathematics and optimization.
 He maintains numerous  aspects of the Sage infrastructure,
@@ -568,7 +570,7 @@ He has taught courses and designed instructional software
 at University of Puget sound for over 37 years,
 and supervised 31 undergraduate research projects.
 
-Jon Lee is a Junior undergraduate computer science major at
+Jon Lee is an undergraduate computer science major at
 University of Washington. He became involved with SageMathCloud
 development when SMC was used for a course he took on scientific
 computing.  In 2014 he spent the summer leading a team of undergraduates
@@ -637,7 +639,8 @@ expensive to host. The realtime
 synchronization problem for computational documents
 is challenging and SMC demonstrates
 that it can be solved (of course,
-building on our implementation of the same algorithm as Google Docs uses).
+building on our implementation of similar algorithms that are used
+in Google Docs).
 We envision our interactive problems as being a special type of
 computational document with realtime sync.
 
@@ -670,30 +673,29 @@ combinatorics, algebraic topology and so on
 
 You only have to admit in class that one or two problems are busted
 and then every evening you get a flood of 10pm emails,
-``I *know* I have number X right; it must be a busted problem?''
+``I *know* I have number 7 right; it must be a busted problem?''
 Well, no.
 
 Instead of trying to amass the largest number of problems possible, or
 to try to copy problems from existing textbooks, we will aim initially
-for very high quality solid problems for more advanced courses.
+for high quality problems for more advanced courses.
 We will carry over ideas from the Sage software development process,
-which is a carefully refined public peer review process inspired by a mix
+which is a carefully refined peer review process inspired by a mix
 of how the peer review process works for journals and how code review
-works in other open source projects.
+works in other open source projects (see  http://trac.sagemath.org/).
 We believe homework problems need to meet the same high standards of
 review and automated testing that we apply to Sage's codebase.
 This is expensive, frustrating and difficult, but is needed
 to ensure problems are useful to instructors and stay reliable
-several years later as Sage and other software the problems rely
-on evolves.
+several years later as Sage and other software evolves.
 
 #### Authoring problems is hard
 
 We do *not* expect an instructor to single-handedly author 30 problem sets
 of 10 interactive problems each, on-the-fly during a semester.  We estimate that
 a good problem takes at least an hour to write, test, debug, refine, and often
-much more time (depending on whether the problem involves adapting an
-existing problem or not).  Creating a good problem is much like creating
+much more time, depending on whether the problem involves adapting an
+existing problem or not.  Creating a good problem is much like creating
 a puzzle or game, with a range of input states, hints along the way
 to mastery, and so on.
 
@@ -710,12 +712,12 @@ including giving SMC credits in exchange for making good problems available,
 and even creating a marketplace for problems.    In addition to our
 own peer review and testing processes, we can also analyze student
 behavior (and simply ask for feedback from students) to ascertain how
-good the problems are that instructors are giving them.
+good problems are.
 
 #### Discovering useful problems is tricky
 
-It is nice when an interactive  problem X is designed to exactly match
-the flavor of problem Y in a popular mathematics textbook.
+It is nice when an interactive  problem is designed to exactly match
+the flavor of a problem in a popular mathematics textbook.
 But the chain rule is the chain rule, no matter what book you
 use.  So curation, cataloging, indexing, keywords, etc., are extremely
 important, and not done well in some existing interactive homework software.
@@ -742,9 +744,9 @@ to support problems that may be very computationally
 intensive for the students to solve.
 For example, imagine a problem in a scientific computing course
 that requires interactively running
-parallel code on a 32-core computer!  The student would
+parallel code on a 32-core computer:  the student would
 click a button to start working interactively on the problem,
-and a dedicated (to that student)
+and a dedicated
 Google compute engine pre-empt instance would start running
 at a cost to us of \$0.352/hour (see https://cloud.google.com/compute/pricing).
 The student would have a fixed maximum amount of time in which to solve that
@@ -753,19 +755,19 @@ problem, to ensure that the amount of resources they use aren't too expensive.
 
 ### Development Plan (6-Month Timeline)
 
-1. 2 weeks -- Implement initial very minimal version of interactive problem system.
-2. 2 weeks -- Make the problem system usable via SMC and collect usage information and feedback as we encourage people to test it.
+1. 2 weeks -- Implement an initial minimal interactive problem system.
+2. 2 weeks -- Make the problem system usable via SMC and collect  feedback as we encourage people to test it.
 3. 1 month -- Implement a sharing marketplace
 4. 1 month -- Test the system on students via homework assignments
 5. 3 months -- Iterate
 
-#### 1. Implement first simple interactive problem system (2 weeks)
+#### 1. Implement a first simple interactive problem system (2 weeks)
 
-Our design is inspired by very well-known game programming and
-user interface design patterns (e.g., model/view/controller) from software engineering.
+Our design is inspired by well-known game programming and
+user interface design patterns.
 
-The first step would be to create a first simple version of an interactive problem system
-built on top of the SMC platform.  We have access to a large number of number of *non-interactive*
+The first step is to create a simple version of an interactive problem system
+built on top of the SMC platform.  We have access to many
 problems created by instructors as Sage worksheets, IPython notebooks, and LaTeX documents,
 which we can draw on for inspiration regarding design requirements.
 
@@ -780,9 +782,9 @@ The might run and output a string that can be parsed as JSON.  For example, it c
 sophisticated code in Sage for constructing example of such matrices!).  The state will also
 include information about what the student has attempted so far, which would be initialized to empty.
 
-- **Render:** The author would create code (or a template) that given the problem state
-object renders a view of it for the student to look at and
-possibly interact with.  There are many ways to do this, and we will eventually support several.  For the
+- **Render:** The author would create code (or a template) that, given the problem state
+object, renders a view of it for the student to look at and
+interact with.  There are many ways to do this, and we may eventually support several.  For the
 first version, we would create a small Python library of code that generates user interface widgets,
 which are then rendered in a browser (possibly using Facebook's React.js library),
 and eventually also rendered in a mobile app (possibly using React native).   Widgets would include blocks of text
@@ -801,25 +803,26 @@ a formula in a box), the controls state is synced back to the server and updated
 In addition, a program running on the server is given the chance to respond to certain state changes
 by updating the state.   These state updates could provide additional user interface
 guidance (e.g., display a sequence of hints, additional reading material, etc.).  They could generate new
-random parameters for the problem, in case the hints have been too excessive.  If the student answers too slowly, it could generate another problem.  We
-think of each interactive problem as a full game, which the student has to master before declaring this one
-done.  A single interactive problem consists of potentially many randomly generated math problems.
-We will also add an option so that the response actually punts to a human to do the actual grading in some cases,
+random parameters for the problem, in case the hints have been too excessive.  If the student answers too slowly, it could generate another problem.
+Each interactive problem is a game, which the student has to master.
+A single interactive problem consists of potentially many randomly generated math problems.
+We will also add an option so that the response actually punts to a human to do the
+grading in some cases,
 e.g., grading a proof written in LaTeX of a theoretical mathematics problem.   When this state is reached
-the problem would indicate it and the user would close the problem and do something else until notified
+the problem would indicate it and the user would close the problem and do something else until being notified
 that the problem was graded, and the proposed solutions would be pre-processed (e.g., check
 that programs run or latex compiles before sending it to an instructor for manual grading).
 Graders would also be notified that there are a batch of proposed answers to
 a given question  ready to be graded.  Graders could optionally in some cases be other students in the same course,
 in similar courses, or outsourced students in India.
 
-The problem author would start out with a very simple template for each component, and make each more sophisticated.
+The problem author would start out with a very simple template for each component, and make each part more sophisticated.
 We imagine they might see the problem template on the left side of the screen and a realtime rendering of the problem
 running on the right hand side, along with buttons to reset or manually change the problem's
 state to
 better test it.
 
-- **Tests:** There are at least two types of automated tests we would initially implement:  **Logical tests** would be 3-tuples of states:  an input state for the problem, a state change caused by user feedback, and the resulting state update caused by the Respond component. When authoring a problem, the sequence of states would be available graphically in the preview pane, and the author could drag and drop states from the preview pane to the tests pane.  **UI tests** would involve rendering the UI for random (or prescribed) valid states of the problem and ensuring that the rendering code doesn't give any errors, and also satisfies some conditions.
+- **Tests:** There are at least two types of automated tests we would initially implement:  **Logical tests** would be 3-tuples of states:  an input state for the problem, a new state caused by user feedback, and the resulting state update caused by the Respond component. When authoring a problem, the sequence of states would be available graphically in the preview pane, and the author could drag and drop states from the preview pane to the tests pane.  **UI tests** would involve rendering the UI for random (or prescribed) valid states of the problem and ensuring that the rendering code doesn't give any errors, and also satisfies some conditions.
 
 
 
