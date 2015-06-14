@@ -821,7 +821,7 @@ that the problem was graded, and the proposed solutions would be pre-processed (
 that programs run or latex compiles before sending it to an instructor for manual grading).
 Graders would also be notified that there are a batch of proposed answers to
 a given question  ready to be graded.  Graders could optionally in some cases be other students in the same course,
-in similar courses, or outsourced students in India.
+in similar courses, or even outsourced to students in other countries.
 
 The problem author would start out with a very simple template for each component, and make each part more sophisticated.
 We imagine they might see the problem template on the left side of the screen and a realtime rendering of the problem
