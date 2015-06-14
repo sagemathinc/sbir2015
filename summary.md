@@ -62,14 +62,9 @@ funds from  NSF grants (as they don't involve NSF's core research mission).
 With open source software,
 moving beyond a small user base of highly technical users involves addressing
 a huge number of difficult technical issues that have nothing to do with research
-mathematics ("the devil is in the details").
+mathematics.
 
-Not only would expanding the value of open source math software  have  far reaching
-positive societal impacts, the freemium aspects of this project
-would make the computers needed to run open source math software
-more available in the developing world.
-
-More directly, our proposed homework system would meet a gaping need in
+Our proposed homework system would meet a gaping need in
 math-related education, especially at the advanced level,
 which will raise technological capabilities of the workforce.
 The free version will also be accessible online to people worldwide

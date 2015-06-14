@@ -1,6 +1,11 @@
-# Project Description -- "SBIR Phase I: Interactive homework problems for advanced computational mathematics"
-
-## Introduction
+---
+title:  Project Description -- SBIR Phase I -- Interactive homework problems for advanced computational mathematics
+author: William A. Stein
+geometry: margin=1.4in
+numbersections: true
+toc: true
+---
+# Introduction
 We propose to design and implement a new approach to
 interactive online homework problems called
 ``SageCloud Interactive Problems'' (SCIP) that
@@ -21,7 +26,7 @@ to use open source tools for doing computational mathematics,
 for writing up and sharing their results, and make
 courses less work to teach and more effective.
 
-## Elevator Pitch
+# Elevator Pitch
 
 
 SCIP will be a new platform for interactive homework problems
@@ -92,9 +97,9 @@ used SMC.
 
 
 
-## The Commercial Opportunity
+# The Commercial Opportunity
 
-### Broader societal need
+## Broader societal need
 
 Many people want to know how to use computation more effectively
 in their jobs for tasks that involve mathematics.  There is
@@ -117,7 +122,7 @@ this would potentially enable new innovation worldwide.  Our proposed
 SCIP project would provide tools that would help people to learn to use
 the broad computational resources that SMC makes available.
 
-### Market and business economics
+## Market and business economics
 
 The initial market for SCIP will be every student
 who is taking a course that involves advanced computational
@@ -210,7 +215,7 @@ surveys of those who use SCIP for one course:
 will advocate using it later in large introductory courses.
 
 
-### The competition
+## The competition
 
 There are a many existing online problem systems that each target
 a specific market segment.
@@ -276,7 +281,7 @@ foundation for pure mathematics courses that
 involve writing proofs.
 
 
-### Key risks in bringing the proposed innovation to market
+## Key risks in bringing the proposed innovation to market
 
 A risk is that the only users of our SCIP problem service
 will be people who **can't afford to pay anything**.  We can
@@ -333,7 +338,7 @@ for mathematics might not be enough to produce something that
 works sufficiently better than existing solutions.
 
 
-### Commercialization Approach
+## Commercialization Approach
 
 We create open source software, which runs in the cloud on Google Compute Engine. Most users
 will try or use SMC online for free, but some small percentage will
@@ -368,7 +373,7 @@ to work a larger percent of time, with vastly more ambitious
 goals.
 
 
-#### Product-market fit
+### Product-market fit
 
 The proposed SCIP problem system, which we plan to implement, doesn't
 exist yet, so it is difficult to address product-market fit.  As evidence
@@ -403,7 +408,7 @@ provides more detailed feedback on how students are doing in a course.
 and how and by whom, has been periodically reported to us by instructors
 using SMC in courses.)
 
-#### Presenting barriers to entry for competition
+### Presenting barriers to entry for competition
 
 SCIP is aimed at computational mathematics teachers and students,
 especially those that care about cost, efficiency, and value open source software.
@@ -452,7 +457,7 @@ can  run on top of the SMC platform.
 
 
 
-## The Innovation
+# The Innovation
 
 Our proposed online interactive problem system mainly
 builds on the Sage mathematical software and
@@ -486,7 +491,7 @@ of computational documents (every keystroke!) is recorded,
 which supports reproducible research, and adds a new dimension.
 
 
-## The Company and Team
+# The Company and Team
 
 SageMath, Inc. was founded in February 2015 as a Delaware C Corporation
 with assistance from Fenwick & West, which is a law firm that
@@ -589,9 +594,9 @@ mathematician-programmers and thousands of users are a key part
 of maintaining and improving a critical component of SageMathCloud.
 
 
-## Technical Discussion and R&D Plan
+# Technical Discussion and R&D Plan
 
-### Introduction
+## Introduction
 
 We propose to implement, on top of the SageMathCloud (SMC)
 platform, a next generation system for web-based
@@ -623,7 +628,7 @@ We will focus mainly on theoretical mathematics, and
 courses that involve programming in Python and R, and
 computational mathematics.
 
-### Difficulties
+## Difficulties
 
 At its core, SCIP involves designing and implementing a way
 to create interactive problems, a way to share those problems, and a
@@ -631,7 +636,7 @@ way to systematically combine problems into assignments.
 There are many daunting problems that arise
 in addressing these challenges.
 
-#### Computational documents are hard
+### Computational documents are hard
 One technical difficulty is that making
 ``computational documents'' (Sage worksheets, IPython notebooks, etc.) available online efficiently
 at scale is very hard, because these documents are  more
@@ -644,7 +649,7 @@ in Google Docs).
 We envision our interactive problems as being a special type of
 computational document with realtime sync.
 
-#### Checking answers is hard
+### Checking answers is hard
 
 The full power of Sage and other software will be available to problem
 authors to check answers.   E.g., a problem author might want
@@ -669,7 +674,7 @@ combinatorics, algebraic topology and so on
 (all areas where Sage is highly developed).
 
 
-#### Maintaining problem quality is difficult
+### Maintaining problem quality is difficult
 
 You only have to admit in class that one or two problems are busted
 and then every evening you get a flood of 10pm emails,
@@ -689,7 +694,7 @@ This is expensive, frustrating and difficult, but is needed
 to ensure problems are useful to instructors and stay reliable
 several years later as Sage and other software evolves.
 
-#### Authoring problems is hard
+### Authoring problems is hard
 
 We do *not* expect an instructor to single-handedly author 30 problem sets
 of 10 interactive problems each, on-the-fly during a semester.  We estimate that
@@ -714,7 +719,7 @@ own peer review and testing processes, we can also analyze student
 behavior (and simply ask for feedback from students) to ascertain how
 good problems are.
 
-#### Discovering useful problems is tricky
+### Discovering useful problems is tricky
 
 It is nice when an interactive  problem is designed to exactly match
 the flavor of a problem in a popular mathematics textbook.
@@ -726,7 +731,7 @@ authors to classify their problems (e.g., automatically suggesting tags
 based on heuristics), would ensure that the problems in SCIP are
 more discoverable by instructors.
 
-#### Problem management is a rats nest
+### Problem management is a rats nest
 
 Problem management is a real rats nest: rosters, scores,
 partial credit for late assignments, extended deadlines
@@ -737,7 +742,7 @@ We all have our quirks when it comes to student work,
 and making these issues easy to manage is a place where
 a lot of effort is required to get it right.
 
-#### Problems are resource intensive
+### Problems are resource intensive
 
 Unlike most online homework systems, SCIP  aims
 to support problems that may be very computationally
@@ -753,7 +758,7 @@ The student would have a fixed maximum amount of time in which to solve that
 problem, to ensure that the amount of resources they use aren't too expensive.
 
 
-### Development Plan (6-Month Timeline)
+## Development Plan (6-Month Timeline)
 
 1. 2 weeks -- Implement an initial minimal interactive problem system.
 2. 2 weeks -- Make the problem system usable via SMC and collect  feedback as we encourage people to test it.
@@ -761,7 +766,7 @@ problem, to ensure that the amount of resources they use aren't too expensive.
 4. 1 month -- Test the system on students via homework assignments
 5. 3 months -- Iterate
 
-#### 1. Implement a first simple interactive problem system (2 weeks)
+### Implement a first simple interactive problem system (2 weeks)
 
 Our design is inspired by well-known game programming and
 user interface design patterns.
@@ -826,7 +831,7 @@ better test it.
 
 
 
-#### 2. Make the interactive problem system available (2 weeks)
+### Make the interactive problem system available (2 weeks)
 
 After implementing a first _minimal usable version_ of 1, which would take about 2 weeks
 of fulltime work by our team (only 2 weeks, since this is similar to the `@interact` functionality
@@ -850,7 +855,7 @@ Based on about a week of feedback from users, we would then iterate on Step 1 ag
 
 
 
-#### 3. Implement a sharing marketplace (1 month)
+### Implement a sharing marketplace (1 month)
 
 Next we would implement a way for authors to share the interactive problems they create.
 We'll add an additional pane to the problem authoring tool from Step 1 through which the instructor
@@ -866,7 +871,7 @@ Sage developers are very used to doing a huge amount of this, and to having ever
 
 We anticipate it will take us about 1 month to get a basic usable version of this up and running.
 
-#### 4. Test the system on students via homework assignments (1 month)
+### Test the system on students via homework assignments (1 month)
 
 Instructors will browse the marketplace and build a homework assignment from the
 interactive problems they find there, and also problems they craft themselves.
@@ -894,7 +899,7 @@ are much higher, as student grades are potentially at stake (instructors are way
 likely to provide quality feedback when you're actually saving them time!).
 We would also spend two weeks systematically gathering usage data.
 
-#### 5. Iterate (3 months)
+### Iterate (3 months)
 
 We would spend the remaining 3 months iterating the above process and collecting data.
 We would in particular focus much of our effort on refining the tools for creating

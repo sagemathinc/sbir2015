@@ -1,0 +1,1 @@
+pandoc -V geometry:margin=1.6in -o description.md.pdf description.md
