@@ -1,7 +1,7 @@
 ---
 title:  Project Summary
 author: William A. Stein
-geometry: margin=1.35in
+geometry: margin=1.25in
 ---
 
 # Overview, Key Words, and Subtopic Name
@@ -19,7 +19,7 @@ Pure mathematics, cloud, interactive homework, open source, Python, R, LaTeX, we
 EA6. Computer Science and Information Technology for Education
 
 
-## Intellectual Merit
+# Intellectual Merit
 
 This Small Business Innovation Research Phase I project will
 create a completely new homework system that uniquely addresses needs in
@@ -39,7 +39,7 @@ then get community feedback from  a large community of users that
 the team has cultivated over many years, and use feedback to
 iterate on the initial product.
 
-## Broader/Commercial Impact
+# Broader/Commercial Impact
 
 The proposed interactive homework system would increase the value
 of SageMathCloud, so there will be more paying customers.  The resulting
