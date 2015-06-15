@@ -6,6 +6,7 @@ numbersections: true
 toc: true
 ---
 # Introduction
+
 We propose to design and implement a new approach to
 interactive online homework problems called
 ``SageCloud Interactive Problems'' (SCIP) that
@@ -27,7 +28,6 @@ for writing up and sharing their results, and make
 courses less work to teach and more effective.
 
 # Elevator Pitch
-
 
 SCIP will be a new platform for interactive homework problems
 built on top of SageMathCloud (SMC).
@@ -145,10 +145,10 @@ We have validated the demand for sophisticated
 web-based open source mathematical
 software by creating several iterations
 of SMC, made available for free.
-We created basic course managment functionality,
+We created basic course management functionality,
 which makes SMC usable for teaching a course.
 SMC was  used by over 65 courses during Spring 2015 and has
-had over 100K users.
+had over 100,000 users.
 In May 2015, we transitioned SMC to a ``freemium'' commercial business
 model and have
 had 35 paying customers (with nearly \$1,500 in revenue so far).
@@ -181,7 +181,7 @@ doing a collaborative research project.   Whenever we provide
 dedicated compute resources we make money, since we are simply
 marking up their cost by a fixed amount.  We also keep the cost down
 for the free resources by using Google's cheaper
-"preemptible instances," which randomly get rebooted,
+``preemptible instances'', which randomly get rebooted,
 and we restrict the memory and speed of each
 user's project.
 
@@ -387,7 +387,9 @@ the SMC platform.  SMC lets them get around issues and inefficiencies with campu
 Permission with campus IT can be hard to get, help is difficult, service
 can be poor, resources may be insufficient, and it is hard for IT
 to know _a priori_ what user needs will be, hence they will often allocate
-resources inefficiently.    Moreover, many students have  slow personal computers
+resources inefficiently.
+Moreover, personal computers of many students
+are in poor condition
 on which they are afraid to install software.
 
 **We have also found that teachers greatly value even the most atrocious
@@ -435,7 +437,7 @@ a competitor a unique advantage,
 since the source code of SMC itself is completely open.
 Instead, we have a head
 start since we have been building a community around Sage for a decade, and around
-SMC for several years now (100K registered users).
+SMC for several years now (100,000 registered users).
 SMC is collaborative, which
 results in a big network effect, where SMC is
 more valuable because some
@@ -474,7 +476,7 @@ SMC is a sophisticated cloud-based collaboration environment for using
 SageMath, R and other software, which has been under  development
 for about 3 years, with significant feedback from users.
 
-SMC involes only technology that is open source, hence
+SMC involves only technology that is open source, hence
 available to all. However, we also have market
 data due to running the software for years.  We have experience and a
 developer community that cuts vertically
@@ -517,7 +519,7 @@ The contributors to SMC are vertically integrated with a
 balance of contributors from high school, college, graduate
 school, teaching, research, and business.
 The core team consists of William Stein (Professor at Univ of Washington),
-Harald Schilly (applied mathematics graduate student
+Harald Schilly (applied mathematics Ph.D. candidate
 in Vienna, Austria), Rob Beezer (professor at Univ of Puget Sound),
 and Jon Lee (Undergraduate at Univ of Washington).
 The team also consults about business matters with Dennis Stein (San Diego businessman),
@@ -542,7 +544,7 @@ He has twenty years experience teaching undergraduate and graduate courses,
 and has supervised four completed Ph.D. theses and several undergraduate
 projects.
 
-Harald Schilly is a Ph.D. student at Universität Wien in Vienna, Austria.
+Harald Schilly is a Ph.D. candidate at Universität Wien in Vienna, Austria.
 Since 2007, he has made numerous contributions to the core SageMath
 library in numerical mathematics and optimization.
 He maintains numerous  aspects of the Sage infrastructure,
@@ -819,7 +821,7 @@ that the problem was graded, and the proposed solutions would be pre-processed (
 that programs run or LaTeX compiles before sending it to an instructor for manual grading).
 Graders would also be notified that there are a batch of proposed answers to
 a given question  ready to be graded.  Graders could optionally in some cases be other students in the same course,
-in similar courses, or outsourced students in India.
+in similar courses, or even outsourced to students in other countries.
 
 The problem author would start out with a very simple template for each component, and make each part more sophisticated.
 We imagine they might see the problem template on the left side of the screen and a realtime rendering of the problem
