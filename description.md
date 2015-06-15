@@ -1,7 +1,7 @@
 ---
 title:  Project Description -- SBIR Phase I -- Interactive homework problems for advanced computational mathematics
 author: William A. Stein
-geometry: margin=1.4in
+geometry: margin=1.35in
 numbersections: true
 toc: true
 ---
@@ -29,27 +29,48 @@ courses less work to teach and more effective.
 
 # Elevator Pitch
 
+Many mathematics classes at most universities make use of an
+online homework system.  Students typically pay around \$20/semester
+to use the system.  Despite their popularity, the existing systems
+have several shortcomings: it is difficult to author new problems,
+it is hard to find problems that are suitable for the specific topic
+currently being covered in a course, and
+problems tend to stop working properly as the
+system is upgraded.
+
 SCIP will be a new platform for interactive homework problems
-built on top of SageMathCloud (SMC).
+built on top of SageMathCloud (SMC) that addresses these shortcomings.
+These improvements are made possible by leveraging SMC, which has
+been developed at University of Washington with
+the support of several NSF grants.
 
-The  customers for SCIP are students and teachers of
-courses that involve any form of computational mathematics.
-For example, SMC is a 100% web-based system
-that was used during Spring 2015 by over 65 courses
-ranging from traditional Calculus courses to courses in Global
-Health, Numerical Analysis, Elliptic Curves and Mathematical
-Finance (see https://github.com/sagemathinc/smc/wiki/Teaching).
-Though SMC does not currently have any interactive homework functionality,
-many of these courses would be greatly enhanced if they could use
-the functionality we propose here.
+The use of SMC will directly address the issue of problem obsolescence
+by using our existing highly developed testing procedures:
+automated testing will immediately detect any errors introduced
+during system upgrades.  The use of SMC will also address the authoring
+problem by using standard and ubiquitous programming tools such as Python
+and a modern web-based interface.  Moreover, the SMC platform
+supports realtime interactive use of sophisticated mathematical software.
 
-Researchers and their students need  easy and affordable
-collaborative access to mathematical software, software development
-environments, and tools for writing and sharing their results.
-SCIP will help in teaching students to use these tools by providing
-both access to the tools and making it possible for instructors to
-create, share, and sell interactive problems that help students
-to learn these tools.
+To help instructors find suitable problems to assign to their students
+(or to help students find problems on a topic where they need more
+practice) we will employ an "App Store" model, similar to
+the way people find smart phone apps or the way Amazon tells customers
+"if you liked that problem, you may also like...."  This is a new
+approach, which is not being used by (and may be very difficult to
+retrofit to) the existing systems.
+
+Our plan for entering the interactive homework system market is to begin by
+focusing on upper-division mathematics classes.  Currently none of the
+existing systems cater to that market, so the barriers to entry will be
+very small.  Since the faculty members who teach those courses also
+teach lower-division courses (such as Calculus), familiarity with
+our product will be a major advantage when we later expand to include
+those high-enrollment courses.  This approach will enable us to develop
+the core functionality of our product without having to simultaneously
+develop the infrastructure to handle millions of simultaneous users.
+
+
 
 Instead of worrying about installing and updating software, learning
 complicated revision control systems, and figuring out how to use cloud
@@ -59,19 +80,6 @@ students and people in developing countries, are extremely price sensitive.
 Our proposed project would leverage open source software, cheap cloud
 computing resources, and systematic optimization based on user feedback
 to make the above affordable.
-
-SMC currently makes math software easily accessible and provides some limited
-course management functionality, but offers nothing for
-managing the daunting complexity involved in curating interactive
-homework problems
-that involve sophisticated computation and mathematics.
-Some of the current state of the art systems feel antiquated,
-mainly addressing freshman and sophomore level material.
-We instead propose to target college
-senior (and even graduate level) level material,
-and support use of sophisticated
-mathematical software that is potentially
-computationally demanding.
 
 A key innovation of SMC is that it is built upon a pool of
 open source software that leverages the combined knowledge and experience
@@ -91,9 +99,6 @@ documents," including IPython notebooks and Sage worksheets.
 Such rich interactive computational documents are
 appealing
 to novice users.
-We have learned much from the feedback from 100K users
-and nearly 100 courses that have
-used SMC.
 
 
 
@@ -147,8 +152,12 @@ software by creating several iterations
 of SMC, made available for free.
 We created basic course management functionality,
 which makes SMC usable for teaching a course.
-SMC was  used by over 65 courses during Spring 2015 and has
-had over 100,000 users.
+SMC is a 100% web-based system
+that was used during Spring 2015 by over 65 courses
+ranging from traditional Calculus courses to courses in Global
+Health, Numerical Analysis, Elliptic Curves and Mathematical
+Finance (see https://github.com/sagemathinc/smc/wiki/Teaching),
+and SMC has had over 100,000 users.
 In May 2015, we transitioned SMC to a ``freemium'' commercial business
 model and have
 had 35 paying customers (with nearly \$1,500 in revenue so far).
