@@ -36,7 +36,7 @@ The  customers for SCIP are students and teachers of
 courses that involve any form of computational mathematics.
 For example, SMC is a 100% web-based system
 that was used during Spring 2015 by over 65 courses
-ranging from traditional Calculus courses to course in Global
+ranging from traditional Calculus courses to courses in Global
 Health, Numerical Analysis, Elliptic Curves and Mathematical
 Finance (see https://github.com/sagemathinc/smc/wiki/Teaching).
 Though SMC does not currently have any interactive homework functionality,
@@ -87,7 +87,7 @@ that handles a huge range of mathematical computations, including
 advanced pure mathematics, numerical analysis, and statistics.
 Users can write computer code and edit LaTeX documents,
 and there's extensive support for "interactive computational
-documents", including IPython notebooks and Sage worksheets.
+documents," including IPython notebooks and Sage worksheets.
 Such rich interactive computational documents are
 appealing
 to novice users.
@@ -181,7 +181,7 @@ doing a collaborative research project.   Whenever we provide
 dedicated compute resources we make money, since we are simply
 marking up their cost by a fixed amount.  We also keep the cost down
 for the free resources by using Google's cheaper
-``preemptible instances", which randomly get rebooted,
+"preemptible instances," which randomly get rebooted,
 and we restrict the memory and speed of each
 user's project.
 
@@ -217,7 +217,7 @@ will advocate using it later in large introductory courses.
 
 ## The competition
 
-There are a many existing online problem systems that each target
+There are many existing online problem systems that each target
 a specific market segment.
 SCIP will initially target advanced computational
 mathematics courses, which is a segment of the market that
@@ -319,7 +319,7 @@ the value of network effects, curated content, and the quality of our
 user support, reputation and development pace
 are the best strategy for addressing this risk.
 Also, from the NSF's perspective, if other companies pick up this technology
-and run with it and build great businesses that out compete SMC, then
+and run with it and build great businesses that out-compete SMC, then
 NSF's investment will have been a great success, since they will have
 supported a big advance in technology, even if SMC is not the beneficiary.
 
@@ -572,7 +572,7 @@ He is the project founder of the
 open source Mathbook XML authoring system
 for creating online open textbooks.
 He has taught courses and designed instructional software
-at University of Puget sound for over 37 years,
+at University of Puget Sound for over 37 years,
 and supervised 31 undergraduate research projects.
 
 Jon Lee is an undergraduate computer science major at
@@ -677,7 +677,7 @@ combinatorics, algebraic topology and so on
 ### Maintaining problem quality is difficult
 
 You only have to admit in class that one or two problems are busted
-and then every evening you get a flood of 10pm emails,
+and then every evening you get a flood of 10 p.m. emails,
 ``I *know* I have number 7 right; it must be a busted problem?''
 Well, no.
 
@@ -731,9 +731,9 @@ authors to classify their problems (e.g., automatically suggesting tags
 based on heuristics), would ensure that the problems in SCIP are
 more discoverable by instructors.
 
-### Problem management is a rats nest
+### Problem management is a rat's nest
 
-Problem management is a real rats nest: rosters, scores,
+Problem management is a real rat's nest: rosters, scores,
 partial credit for late assignments, extended deadlines
 for sick students, multiple or unlimited attempts to
 solve problems, and automated peer grading of advanced problems (e.g.,
@@ -782,9 +782,9 @@ An interactive problem will be specified by four components:
 
 - **Initialization:** A problem author would write code, written in _any_ programming language,
 that initializes the problem state (this is like randomly populating a game world).
-The might run and output a string that can be parsed as JSON.  For example, it could create a random
-3x3 matrix with integer entries that can be easily reduced to echelon form (it could leverage
-sophisticated code in Sage for constructing example of such matrices!).  The state will also
+They might run and output a string that can be parsed as JSON.  For example, it could create a random
+$3\times 3$ matrix with integer entries that can be easily reduced to echelon form (it could leverage
+sophisticated code in Sage for constructing examples of such matrices!).  The state will also
 include information about what the student has attempted so far, which would be initialized to empty.
 
 - **Render:** The author would create code (or a template) that, given the problem state
@@ -816,7 +816,7 @@ grading in some cases,
 e.g., grading a proof written in LaTeX of a theoretical mathematics problem.   When this state is reached
 the problem would indicate it and the user would close the problem and do something else until being notified
 that the problem was graded, and the proposed solutions would be pre-processed (e.g., check
-that programs run or latex compiles before sending it to an instructor for manual grading).
+that programs run or LaTeX compiles before sending it to an instructor for manual grading).
 Graders would also be notified that there are a batch of proposed answers to
 a given question  ready to be graded.  Graders could optionally in some cases be other students in the same course,
 in similar courses, or outsourced students in India.
@@ -862,7 +862,7 @@ We'll add an additional pane to the problem authoring tool from Step 1 through w
 can publish a problem to a central database.    The database would then get a snapshot of the
 complete problem description, including testing code, etc.  The instructor would specify the copyright
 license under which other people are allowed to use their problem, which would include both free
-(creative commons) and commercial with a set price.
+(Creative Commons) and commercial with a set price.
 
 Once a problem is pushed to the sharing database, we (the developers, initially - later other people)
 would be notified and would peer review the problem.   The author would then
