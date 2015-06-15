@@ -25,7 +25,7 @@ User data, including interactive homework problems, are
 proprietary, and we protect it according to our Terms
 of Service and Privacy Policies, which are described
 at https://cloud.sagemath.com/policies.  This data will not be
-dissimenated, except as laid out in the above policies.
+disseminated, except as laid out in the above policies.
 
 We backup user data as follows:
 
@@ -36,11 +36,11 @@ saved (so every 5 minutes when actively used).
 3. The files and the second server are snapshotted using btrfs with
 snapshots saved for years (but trimmed over time).
 4. Every 8 hours an incremental tarball is made of modified projects
-and saved in a Google cloud storage nearline bucket.
+and saved in a Google Cloud Storage Nearline bucket.
 5. At least once per week (and usually once per day), we rsync the new
 incremental tarballs to an encrypted USB drive, which is usually not
 connected to the Internet (and physically with me in most cases).
-6. Once per week we rsync that usb drive to another encrypted USB
+6. Once per week we rsync that USB drive to another encrypted USB
 drive sitting at the headquarters of SageMath, Inc.
 7. Once per month we swap that USB drive from step 6 out with another
 encrypted USB drive that is kept in a locked office at University of
